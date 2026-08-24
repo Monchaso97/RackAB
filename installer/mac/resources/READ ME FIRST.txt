@@ -1,0 +1,20 @@
+RackAB - macOS
+==============
+
+INSTALL
+1. Drag "RackAB.vst3" onto the "VST3 Plugins" shortcut in this window.
+   (This copies it to /Library/Audio/Plug-Ins/VST3 - macOS may ask for
+   your password once.)
+2. Open your DAW (FL Studio, Pro Tools, etc.) and rescan plugins.
+
+FIRST-RUN SECURITY STEP (only once)
+Because this plugin is not notarized by Apple, macOS Gatekeeper may say it
+"cannot be opened". Clear it once with EITHER method:
+
+  a) In Finder, right-click RackAB.vst3 (in the VST3 folder) > Open, then
+     confirm. -- or --
+
+  b) Open Terminal and run:
+     sudo xattr -dr com.apple.quarantine "/Library/Audio/Plug-Ins/VST3/RackAB.vst3"
+
+After that the DAW loads it normally.
